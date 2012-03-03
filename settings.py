@@ -95,11 +95,11 @@ TEMPLATE_LOADERS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    #'django.middleware.common.CommonMiddleware',
-    #django.contrib.sessions.middleware.SessionMiddleware',
-    #django.middleware.csrf.CsrfViewMiddleware',
-    #django.contrib.auth.middleware.AuthenticationMiddleware',
-    #django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    #'django.contrib.messages.middleware.MessageMiddleware',
 )
 
 ROOT_URLCONF = 'mysite.urls'
@@ -112,12 +112,13 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
-    #'django.contrib.auth',
-    #'django.contrib.contenttypes',
-    #'django.contrib.sessions',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
     #'django.contrib.sites',
     #django.contrib.messages',
     #django.contrib.staticfiles',
+   'django.contrib.admin',
    'mysite.books',
    
 
